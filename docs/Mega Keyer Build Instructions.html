@@ -24,16 +24,16 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>JC Martin</o:Author>
   <o:LastAuthor>JC Martin</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>12</o:TotalTime>
-  <o:LastPrinted>2019-05-04T23:44:00Z</o:LastPrinted>
-  <o:Created>2019-05-04T23:45:00Z</o:Created>
-  <o:LastSaved>2019-05-04T23:45:00Z</o:LastSaved>
-  <o:Pages>21</o:Pages>
-  <o:Words>2090</o:Words>
-  <o:Characters>11916</o:Characters>
-  <o:Lines>99</o:Lines>
-  <o:Paragraphs>27</o:Paragraphs>
-  <o:CharactersWithSpaces>13979</o:CharactersWithSpaces>
+  <o:TotalTime>16</o:TotalTime>
+  <o:LastPrinted>2019-05-05T15:07:00Z</o:LastPrinted>
+  <o:Created>2019-05-05T15:08:00Z</o:Created>
+  <o:LastSaved>2019-05-05T15:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2111</o:Words>
+  <o:Characters>12034</o:Characters>
+  <o:Lines>100</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14117</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1071,7 +1071,6 @@ span.GramE
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
 	mso-ascii-font-family:Calibri;
 	mso-ascii-theme-font:minor-latin;
 	mso-fareast-font-family:Calibri;
@@ -3547,11 +3546,12 @@ yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
 </v:shape><![endif]--><![if !vml]><img width=298 height=261
 src="Mega%20Keyer%20Build%20Instructions.fld/image001.jpg" v:shapes="Picture_x0020_3"><![endif]></span></p>
 
-<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
-field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
-<span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-element:
-field-end'></span><![endif]--> PCB dimensions (millimeters)</p>
+<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='mso-no-proof:yes'>1</span><!--[if supportFields]><span
+style='mso-no-proof:yes'><span style='mso-element:field-end'></span></span><![endif]-->
+PCB dimensions (millimeters)</p>
 
 <p class=MsoNormal>Make sure the clean the edges of the plates as there maybe
 paper residue that could impact alignment.</p>
@@ -4112,20 +4112,32 @@ href="https://github.com/w6ipa/k3ng_cw_keyer/tree/mega-keyer-v1.1">https://githu
 
 <p class=MsoNormal>Under releases:</p>
 
-<p class=MsoNormal><a href="https://github.com/w6ipa/k3ng_cw_keyer/releases/">https://github.com/w6ipa/k3ng_cw_keyer/releases/</a></p>
+<p class=MsoNormal><span class=MsoHyperlink><a
+href="https://github.com/w6ipa/k3ng_cw_keyer/releases/">https://github.com/w6ipa/k3ng_cw_keyer/releases/</a></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>you can select which one you want to download.</p>
+<p class=MsoNormal>you can select which one you want to download (there is only
+v1.0 right now).</p>
 
-<p class=MsoNormal>You then unzip the archive in your <a
+<p class=MsoNormal>You then unzip the archive in your <span class=MsoHyperlink><a
 href="https://programmingelectronics.com/understanding-the-arduino-sketchbook-opening-and-saving-arduino-sketches/">Arduino
-IDE sketchbook directory</a>. </p>
+IDE sketchbook directory</a></span>. </p>
 
-<p class=MsoNormal>And then add <a
-href="https://github.com/duinoWitchery/hd44780">the hd44780 library</a>
-required by this project using <a
-href="https://www.arduino.cc/en/guide/libraries">the library manager</a>
+<p class=MsoNormal>You need to copy the <span class=GramE>folder :</span></p>
+
+<p class=MsoNormal>&lt;sketchbook&gt;/k3ng_cw_keyer/libraries/K3NG_PS2Keyboard</p>
+
+<p class=MsoNormal>to</p>
+
+<p class=MsoNormal>&lt;sketchbook&gt;/libraries</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>And then add <span class=MsoHyperlink><a
+href="https://github.com/duinoWitchery/hd44780">the hd44780 library</a></span>
+required by this project using <span class=MsoHyperlink><a
+href="https://www.arduino.cc/en/guide/libraries">the library manager</a></span>
 (search for bill <span class=SpellE>perry</span>) :</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -4151,10 +4163,10 @@ should be greeted with the K3NG Hi screen and tone. </p>
 <h1>Step 24: The case</h1>
 
 <p class=MsoNormal>The BOM is listing two <span class=GramE>options :</span>
-either you go with just the plates and some headers or choose to print a façade.
-You can experiment in this area, with location of the screen/buttons to suit
-your need. Unfortunately, “standard” PCB size seem to be 100mm which means that
-to fit some standard case you may have to remote some connectors.</p>
+either you go with just the plates and some headers or choose to print a
+façade. You can experiment in this area, with location of the screen/buttons to
+suit your need. Unfortunately, “standard” PCB size seem to be 100mm which means
+that to fit some standard case you may have to remote some connectors.</p>
 
 <p class=MsoNormal>Anyway, here is what the final assembly could look like:</p>
 
@@ -4176,8 +4188,8 @@ src="Mega%20Keyer%20Build%20Instructions.fld/image051.jpg" v:shapes="Picture_x00
 
 <p class=MsoNormal><s>1/ there is a bug in the k3ng software that prevents
 switching from CLI to <span class=SpellE>Winkeyer</span> mode. Follow <span
-class=GramE>here :</span> <a
-href="https://groups.io/g/radioartisan/message/10128">https://groups.io/g/radioartisan/message/10128</a><o:p></o:p></s></p>
+class=GramE>here :</span> <span class=MsoHyperlink><a
+href="https://groups.io/g/radioartisan/message/10128">https://groups.io/g/radioartisan/message/10128</a></span><o:p></o:p></s></p>
 
 <p class=MsoNormal>2/ powering through the barrel connector with 12v makes the <span
 class=SpellE>lcd</span> flicker when characters are displayed – but works fine

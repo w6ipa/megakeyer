@@ -24,16 +24,16 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>JC Martin</o:Author>
   <o:LastAuthor>JC Martin</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>16</o:TotalTime>
-  <o:LastPrinted>2019-05-05T15:07:00Z</o:LastPrinted>
-  <o:Created>2019-05-05T15:08:00Z</o:Created>
-  <o:LastSaved>2019-05-05T15:08:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>2111</o:Words>
-  <o:Characters>12034</o:Characters>
-  <o:Lines>100</o:Lines>
-  <o:Paragraphs>28</o:Paragraphs>
-  <o:CharactersWithSpaces>14117</o:CharactersWithSpaces>
+  <o:TotalTime>13</o:TotalTime>
+  <o:LastPrinted>2019-05-24T16:50:00Z</o:LastPrinted>
+  <o:Created>2019-05-24T16:51:00Z</o:Created>
+  <o:LastSaved>2019-05-24T16:51:00Z</o:LastSaved>
+  <o:Pages>22</o:Pages>
+  <o:Words>2246</o:Words>
+  <o:Characters>12808</o:Characters>
+  <o:Lines>106</o:Lines>
+  <o:Paragraphs>30</o:Paragraphs>
+  <o:CharactersWithSpaces>15024</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -683,14 +683,14 @@ href="Mega%20Keyer%20Build%20Instructions.fld/colorschememapping.xml">
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
 @font-face
 	{font-family:"Calibri Light";
 	panose-1:2 15 3 2 2 2 4 3 2 4;
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:-1610611985 1073750139 0 0 415 0;}
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
 @font-face
 	{font-family:"Helvetica Neue";
 	panose-1:2 0 5 3 0 0 0 2 0 4;
@@ -698,6 +698,13 @@ href="Mega%20Keyer%20Build%20Instructions.fld/colorschememapping.xml">
 	mso-generic-font-family:auto;
 	mso-font-pitch:variable;
 	mso-font-signature:-452984065 1342208475 16 0 1 0;}
+@font-face
+	{font-family:"Andale Mono";
+	panose-1:2 11 5 9 0 0 0 0 0 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:647 0 0 0 159 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -1116,7 +1123,9 @@ div.WordSection1
 	mso-ascii-font-family:Calibri;
 	mso-ascii-theme-font:minor-latin;
 	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;}
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 table.MsoTableGrid
 	{mso-style-name:"Table Grid";
 	mso-tstyle-rowband-size:0;
@@ -1136,7 +1145,9 @@ table.MsoTableGrid
 	mso-ascii-font-family:Calibri;
 	mso-ascii-theme-font:minor-latin;
 	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;}
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 table.MsoTable15List7Colorful
 	{mso-style-name:"List Table 7 Colorful";
 	mso-tstyle-rowband-size:1;
@@ -1153,6 +1164,8 @@ table.MsoTable15List7Colorful
 	mso-ascii-theme-font:minor-latin;
 	mso-hansi-font-family:Calibri;
 	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
 	color:black;
 	mso-themecolor:text1;}
 table.MsoTable15List7ColorfulFirstRow
@@ -4042,7 +4055,7 @@ src="Mega%20Keyer%20Build%20Instructions.fld/image048.jpg" v:shapes="Picture_x00
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<h1>Step 24: Buttons (optional).</h1>
+<h1>Step 23: Buttons (optional).</h1>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -4056,7 +4069,24 @@ And the switch on the rotary encoder can be used as button 0.</p>
 <p class=MsoNormal>Depending on which option you select, you may have to update
 the options before to upload to the Arduino.</p>
 
-<h1>Step 23: Power on and programing.</h1>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The encoder is on pin A1 while the regular K3NG buttons are
+on pin A3. </p>
+
+<p class=MsoNormal>By defaults the software is configured for using the encoder
+switch. If you add buttons, you can change the line 27:</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:10.0pt;
+font-family:"Andale Mono"'>#define <span class=SpellE>analog_buttons_pin</span>
+A1<o:p></o:p></span></p>
+
+<p class=MsoNormal>From A1 to A3 in the file <span class=SpellE><span
+style='font-size:10.0pt;font-family:"Andale Mono"'>keyer_pin_settings_megakeyer.h</span></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1>Step 24: Power on and programing.</h1>
 
 <p class=MsoNormal>The Arduino can be powered either through the USB port
 (regular 5v USB micro phone charger, or PC), or with a 9v (optimal) power
@@ -4160,13 +4190,13 @@ should be greeted with the K3NG Hi screen and tone. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<h1>Step 24: The case</h1>
+<h1>Step 25: The case</h1>
 
-<p class=MsoNormal>The BOM is listing two <span class=GramE>options :</span>
-either you go with just the plates and some headers or choose to print a
-façade. You can experiment in this area, with location of the screen/buttons to
-suit your need. Unfortunately, “standard” PCB size seem to be 100mm which means
-that to fit some standard case you may have to remote some connectors.</p>
+<p class=MsoNormal>The BOM is listing two options: either you go with just the
+plates and some headers or choose to print a façade. You can experiment in this
+area, with location of the screen/buttons to suit your need. Unfortunately,
+“standard” PCB size seem to be 100mm which means that to fit some standard case
+you may have to remote some connectors.</p>
 
 <p class=MsoNormal>Anyway, here is what the final assembly could look like:</p>
 
@@ -4182,6 +4212,33 @@ src="Mega%20Keyer%20Build%20Instructions.fld/image051.jpg" v:shapes="Picture_x00
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
+<h1>Step 26: PS/2 Keyboard</h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>Warning – silk screen is wrong<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>To connect a PS/2 keyboard – you can use <a
+href="https://www.adafruit.com/product/804">https://www.adafruit.com/product/804</a></p>
+
+<p class=MsoNormal>And add a 4 pin Dupont connector with the following color <span
+class=GramE>coding :</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Yellow -&gt; CLK (Silk screen DATA)</p>
+
+<p class=MsoNormal>Brown -&gt; DATA (Silk screen CLK)</p>
+
+<p class=MsoNormal>Black -&gt; GND (Silk screen 5V)</p>
+
+<p class=MsoNormal>Green -&gt; 5V (Silk screen GND)</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
 <h1>Known Issues</h1>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
@@ -4194,6 +4251,13 @@ href="https://groups.io/g/radioartisan/message/10128">https://groups.io/g/radioa
 <p class=MsoNormal>2/ powering through the barrel connector with 12v makes the <span
 class=SpellE>lcd</span> flicker when characters are displayed – but works fine
 when powered through the <span class=SpellE>usb</span>. </p>
+
+<p class=MsoNormal>3/ if you <span class=GramE>get :</span> <span class=SpellE>avrdude</span>:
+stk500_recv(): programmer is not responding – this may mean that you don’t have
+a boot loader. See step 24.</p>
+
+<p class=MsoNormal>4/ Silk screen is wrong for the PS/2 header. It should read CLK
+/ DATA / GND / 5V starting from the piezo transducer.</p>
 
 </div>
 
